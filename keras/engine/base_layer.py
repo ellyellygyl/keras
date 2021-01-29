@@ -36,7 +36,7 @@ from google.protobuf import json_format
 from tensorflow.python.autograph.core import ag_ctx
 from tensorflow.python.autograph.impl import api as autograph
 from tensorflow.python.eager import execute
-from tensorflow.python.eager import monitoring
+from tensorflow.python.tools import monitoring  # pylint: disable=g-direct-tensorflow-import
 from keras import backend
 from keras import constraints
 from keras import initializers

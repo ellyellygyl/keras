@@ -30,13 +30,13 @@ import random
 import numpy as np
 import six
 from tensorflow.python.eager import context
-from tensorflow.python.eager import monitoring
 from tensorflow.python.framework import smart_cond
 from keras import backend
 from keras.engine import training_utils
 from keras.utils import data_utils
 from keras.utils import tf_utils
 from tensorflow.python.platform import tf_logging as logging
+from tensorflow.python.tools import monitoring  # pylint: disable=g-direct-tensorflow-import
 from tensorflow.python.util.tf_export import keras_export
 
 keras_data_adapter_gauge = monitoring.BoolGauge(

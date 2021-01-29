@@ -29,7 +29,6 @@ import types as python_types
 import warnings
 
 import numpy as np
-from tensorflow.python.eager import monitoring
 from keras import activations
 from keras import backend as K
 from keras import constraints
@@ -45,6 +44,7 @@ from keras.utils import generic_utils
 from keras.utils import tf_inspect
 from keras.utils import tf_utils
 from tensorflow.python.platform import tf_logging
+from tensorflow.python.tools import monitoring  # pylint: disable=g-direct-tensorflow-import
 from tensorflow.python.training.tracking import base as trackable
 from tensorflow.python.util.tf_export import get_canonical_name_for_symbol
 from tensorflow.python.util.tf_export import get_symbol_from_name
